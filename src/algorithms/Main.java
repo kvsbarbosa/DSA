@@ -5,21 +5,13 @@ import algorithms.list.*;
 public class Main {
 
 	public static void main(String[] args) {
-		Aluno a1 = new Aluno();
-		Aluno a2 = new Aluno();
-		Aluno a3 = new Aluno();
+
+		LinkedList lista = new LinkedList();
+		lista.add("Rafael");
+		lista.add(0, "Paulo");
+		lista.add(1, "Camila");
 		
-		a1.setNome("Kaio");
-		a2.setNome("Gigi");
-		a3.setNome("Mig");
-		
-		MyList list = new MyList();
-		
-		list.add(a1);
-		list.add(a2);
-		list.add(0, a3);
-		
-		System.out.println(list);
+		System.out.println(lista);
 	}
 
 }
